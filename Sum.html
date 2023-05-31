@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soma</title>
+</head>
+<body>
+    <Section>
+        <h2>SOMA</h2>
+        <div style="display: flex; gap: 1rem; border: 2px solid #000; align-items: baseline;">
+            <input type="number" placeholder="primeiro numero" class="num1" style="height: 1.2rem;">
+            <p>+</p>
+            <input type="number" placeholder="segundo numero" class="num2" style="height: 1.2rem;">
+            <p>=</p>
+            <p class="result" style="width: 11rem; height: 1.2rem; border: 2px solid #000"></p>
+        </div>
+        <button onclick="sum()" style="margin-top: 2%; width: 10rem;">Calcular</button>
+    </Section>
+</body>
+<script>
+var num1 = document.querySelector(".num1");
+var num2 = document.querySelector(".num2");
+var result = document.querySelector(".result");
+
+function sum() {
+    if(num1.value && num2.value){
+        result.innerHTML = parseFloat(num1.value) + parseFloat(num2.value);   
+    } else if(num1.value) {
+        result.innerHTML = num1.value
+    } else {
+        result.innerHTML = num2.value
+    }
+}
+</script>
+</html>
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantos Negativos?</title>
+</head>
+<body>
+</body>
+<script>
+    var num1 = prompt("Digite um valor positivo ou negativo");
+    var num2 = prompt("Digite um valor positivo ou negativo");
+    var num3 = prompt("Digite um valor positivo ou negativo");
+    parseFloat(num1, num2, num3)
+    var negativos = 0;
+
+    if(num1 < 0){
+        negativos++;
+    } 
+    
+    if(num2 < 0){
+        negativos++;
+    } 
+    
+    if(num3 < 0){
+        negativos++;
+    }
+
+    if(negativos == 1){
+        alert("Você digitou " + negativos + " numero negativo")
+    } else {
+        alert("Você digitou " + negativos + " numeros negativos")
+    }
+   
+
+
+</script>
+</html>

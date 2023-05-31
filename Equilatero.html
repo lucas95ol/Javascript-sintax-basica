@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>É equilátero?</title>
+</head>
+<body>
+    <h1>Descubra se é um triângulo equilátero</h1>
+    <p>Digite o primeiro lado : <input type="number" class="side1"></p>
+    <p>Digite o segundo lado : <input type="number" class="side2"></p>
+    <p>Digite o terceiro lado : <input type="number" class="side3"></p>
+    <br>
+    <button onclick="descobrir()">Descobrir</button>
+</body>
+<script>
+    var side1 = document.querySelector(".side1");
+    var side2 = document.querySelector(".side2");
+    var side3 = document.querySelector(".side3");
+
+    function descobrir(){
+        if(side1.value == side2.value && side2.value == side3.value){
+             alert("É equilátero");
+         } else {
+             alert("Não é equilátero");
+         }
+    }
+</script>
+</html>
